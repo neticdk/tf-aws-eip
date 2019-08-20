@@ -17,10 +17,11 @@ module "eip" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
+| associate\_with\_private\_ip | A user specified primary or secondary private IP address to associate with the Elastic IP address | string | `"null"` | no |
 | instance | EC2 instance ID | string | `"null"` | no |
-| network\_interface  | Network interface ID to associate with | string | `"null"` | no |
+| name | Name used for this EIP | string | n/a | yes |
+| network\_interface | Network interface ID to associate with | string | `"null"` | no |
 | public\_ipv4\_pool | EC2 IPv4 address pool identifier or amazon | string | `"null"` | no |
-| ssociate\_with\_private\_ip | A user specified primary or secondary private IP address to associate with the Elastic IP address | string | `"null"` | no |
 | tags | A map of tags to add to all resources | map | `<map>` | no |
 | vpc | If the EIP is in a VPC or not | bool | `"true"` | no |
 

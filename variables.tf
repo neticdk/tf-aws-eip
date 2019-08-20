@@ -10,6 +10,11 @@ variable "tags" {
   default     = {}
 }
 
+variable "name" {
+  description = "Name used for this EIP"
+  type        = string
+}
+
 variable "vpc" {
   description = "If the EIP is in a VPC or not"
   type        = bool
