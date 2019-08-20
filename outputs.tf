@@ -7,45 +7,45 @@
 
 output "id" {
   description = "The EIP allocation ID"
-  value = aws_eip.id
+  value = aws_eip.this.id
 }
 
 output "private_ip" {
   description = "The private IP address"
-  value = aws_eip.private_ip
+  value = aws_eip.this.private_ip
 }
 
 output "private_dns" {
   description = "The Private DNS associated with the Elastic IP address"
-  value = aws_eip.private_dns
+  value = aws_eip.this.private_dns
 }
 
 output "associate_with_private_ip" {
   description = "The user specified private IP address"
-  value = aws_eip.associate_with_private_ip
+  value = aws_eip.this.associate_with_private_ip
 }
 
 output "public_ip" {
   description = "The public IP address"
-  value = aws_eip.public_ip
+  value = aws_eip.this.public_ip
 }
 
 output "public_dns" {
   description = "The public DNS associated with the Elastic IP address"
-  value = aws_eip.public_dns
+  value = aws_eip.this.public_dns
 }
 
 output "instance" {
   description = "The ID of the attached instance"
-  value = aws_eip.instance
+  value = aws_eip.this.instance
 }
 
 output "network_interface" {
   description = "The ID of the attached network interface"
-  value = aws_eip.network_interface
+  value = aws_eip.this.network_interface
 }
 
 output "public_ipv4_pool" {
   description = "EC2 IPv4 address pool identifier"
-  value = aws_eip.public_ipv4_pool
+  value = aws_eip.this.public_ipv4_pool
 }
