@@ -22,7 +22,7 @@ variable "instance" {
   default     = null
 }
 
-variable "network_interface " {
+variable "network_interface" {
   description = "Network interface ID to associate with"
   type        = string
   default     = null
