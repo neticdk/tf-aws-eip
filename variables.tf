@@ -28,7 +28,7 @@ variable "network_interface" {
   default     = null
 }
 
-variable "ssociate_with_private_ip" {
+variable "associate_with_private_ip" {
   description = "A user specified primary or secondary private IP address to associate with the Elastic IP address"
   type        = string
   default     = null
