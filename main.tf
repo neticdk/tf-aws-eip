@@ -14,7 +14,7 @@ locals {
 }
 
 resource "aws_eip" "this" {
-  vpc                       = var.vpc
+  domain                    = var.vpc #changed vpc = true to domain = "vpc"
   instance                  = var.instance
   network_interface         = var.network_interface
   associate_with_private_ip = var.associate_with_private_ip
