@@ -23,7 +23,7 @@ module "eip" {
 | network\_interface | Network interface ID to associate with | string | `"null"` | no |
 | public\_ipv4\_pool | EC2 IPv4 address pool identifier or amazon | string | `"null"` | no |
 | tags | A map of tags to add to all resources | map | `<map>` | no |
-| vpc | If the EIP is in a VPC or not | bool | `"true"` | no |
+| vpc | If the EIP is in a VPC or not | string | `"vpc"` | no |
 
 ## Outputs
 

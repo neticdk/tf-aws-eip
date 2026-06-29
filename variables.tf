@@ -18,8 +18,8 @@ variable "name" {
 
 variable "vpc" {
   description = "If the EIP is in a VPC or not"
-  type        = bool
-  default     = true
+  type        = string
+  default     = "vpc"
 }
 
 variable "instance" {
