@@ -2,13 +2,13 @@
 
 ## Supported Terraform Versions
 
-Terraform 0.12
+Terraform >= 1.15, AWS provider ~> 6.0
 
 ## Usage
 
 ```hcl
 module "eip" {
-  source  = "github.com/neticdk/tf-aws-eip"
+  source  = "github.com/neticdk/tf-aws-eip?ref=v2.0.0"
 }
 ```
 
@@ -22,7 +22,7 @@ module "eip" {
 | name | Name used for this EIP | string | n/a | yes |
 | network\_interface | Network interface ID to associate with | string | `"null"` | no |
 | public\_ipv4\_pool | EC2 IPv4 address pool identifier or amazon | string | `"null"` | no |
-| tags | A map of tags to add to all resources | map | `<map>` | no |
+| tags | A map of tags to add to all resources | map(string) | `<map>` | no |
 | vpc | If the EIP is in a VPC or not | string | `"vpc"` | no |
 
 ## Outputs
